@@ -1,0 +1,11 @@
+{
+    "name": "Solidify Docker+GitHub Container Registry CI workflow",
+    "description": "Workflow to build and push a Docker container to GitHub Container Registry.",
+    "iconName": "docker-ghcr-icon",
+    "categories": [
+        "Docker"
+    ],
+    "filePatterns": [
+        "^Dockerfile"
+    ]
+}
