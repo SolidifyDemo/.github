@@ -1,0 +1,11 @@
+{
+    "name": "NEW Solidify sample workflow",
+    "description": "NEW Sample template",
+    "iconName": "docker-ghcr-icon",
+    "categories": [
+        "Docker"
+    ],
+    "filePatterns": [
+        "^Dockerfile"
+    ]
+}
