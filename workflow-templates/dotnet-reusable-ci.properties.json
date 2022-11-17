@@ -1,0 +1,11 @@
+{
+    "name": "Solidify dotnet demo CI",
+    "description": "start workflow for dotnet",
+    "iconName": "docker-ghcr-icon",
+    "categories": [
+        ".Dotnet"
+    ],
+    "filePatterns": [
+        "^Program.cs"
+    ]
+}
