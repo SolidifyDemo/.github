@@ -1,5 +1,4 @@
 name: sample-template
-
 on:
   push:
     branches: [ $default-branch ]
