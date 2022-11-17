@@ -1,1 +1,10 @@
-
+{
+    "name": "Solidify Dotnet Build Starter",
+    "description": "Build dotnet",
+    "iconName": "docker-ghcr-icon",
+    "categories": [
+        "Docker"
+    ],
+    "filePatterns": [
+    ]
+}
