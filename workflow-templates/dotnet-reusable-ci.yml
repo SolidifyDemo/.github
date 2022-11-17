@@ -8,4 +8,4 @@ on:
 
 jobs:
   UseReusable:
-    uses: SolidifyDemo/reusable-workflows/.github/dotnet-reusable-ci.yml@main
+    uses: SolidifyDemo/reusable-workflows/.github/workflows/dotnet-reusable-ci.yml@main
