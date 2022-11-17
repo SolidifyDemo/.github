@@ -3,7 +3,7 @@
     "description": "Build dotnet",
     "iconName": "docker-ghcr-icon",
     "categories": [
-        "Docker"
+        ".Net"
     ],
     "filePatterns": [
     ]
