@@ -7,24 +7,5 @@ on:
     branches: [ $default-branch ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 7.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-    - name: Package
-      run: dotnet publish -c Release -o webapp
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@83fd05a356d7e2593de66fc9913b3002723633cb
-      with:
-        name: webapp
-        path: webapp/**
+  reusable:
+    uses: actions-training-031122/reusable-build.yml
