@@ -8,4 +8,4 @@ on:
 
 jobs:
   reusable:
-    uses: actions-training-031122/reusable-build.yml
+    uses: actions-training-031122/reusable-build.yml@main
