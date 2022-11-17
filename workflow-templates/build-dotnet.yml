@@ -7,4 +7,5 @@ on:
     branches: [ $default-branch ]
 
 jobs:
-  reusable: SolidifyDemo/actions-training-031122/.github/workflows/reusable-build.yml@main
+  reusable:
+    uses: SolidifyDemo/actions-training-031122/.github/workflows/reusable-build.yml@main
