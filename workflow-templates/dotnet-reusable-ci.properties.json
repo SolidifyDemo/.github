@@ -3,8 +3,7 @@
     "description": "start workflow for dotnet 8",
     "iconName": "docker-ghcr-icon",
     "categories": [
-        ".Dotnet"
-        ".cs"
+        ".Dotnet"        
     ],
     "filePatterns": [
         "^Program.cs"
