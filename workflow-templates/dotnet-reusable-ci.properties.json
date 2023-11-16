@@ -1,9 +1,10 @@
 {
     "name": "Solidify dotnet demo CI",
-    "description": "start workflow for dotnet",
+    "description": "start workflow for dotnet 8",
     "iconName": "docker-ghcr-icon",
     "categories": [
         ".Dotnet"
+        ".cs"
     ],
     "filePatterns": [
         "^Program.cs"
