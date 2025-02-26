@@ -26,6 +26,7 @@ jobs:
       - uses: actions/setup-node@v4
       - run: npm install
         working-directory: ${{env.SAFE_SETTINGS_CODE_DIR}}
+      - run: ls -a
       - run: npm run full-sync
         working-directory: ${{env.SAFE_SETTINGS_CODE_DIR}}
         env:
