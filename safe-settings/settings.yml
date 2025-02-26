@@ -10,13 +10,6 @@ rulesets:
     # - active
     # - evaluate
     enforcement: evaluate
-
-    # The actors that can bypass the rules in this ruleset
-    bypass_actors:
-      - actor_id: 1
-        actor_type: OrganizationAdmin
-        bypass_mode: always
-
     conditions:
       # Parameters for a repository ruleset ref name condition
       ref_name:
