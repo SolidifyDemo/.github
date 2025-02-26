@@ -29,7 +29,7 @@ jobs:
       - run: | 
               cd ${{env.SAFE_SETTINGS_CODE_DIR }}
               ls -a
-      - run: npm run full-sync
+      - run: npm run
         working-directory: ${{env.SAFE_SETTINGS_CODE_DIR}}
         env:
           GH_ORG: ${{ vars.SAFE_SETTINGS_GH_ORG }}
