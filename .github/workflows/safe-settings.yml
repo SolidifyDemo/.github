@@ -22,7 +22,7 @@ jobs:
         with:
           repository: github/safe-settings
           ref: ${{ env.SAFE_SETTINGS_VERSION }}
-          path: ${{ SAFE_SETTINGS_CODE_DIR }}
+          path: ${{ env.SAFE_SETTINGS_CODE_DIR }}
       - uses: actions/setup-node@v4
       - run: npm install
         working-directory: ${{env.SAFE_SETTINGS_CODE_DIR}}
