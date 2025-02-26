@@ -1,6 +1,31 @@
-# This settings file can be used to create org-level settings
+rulesets:
+  - name: Template
+    # The target of the ruleset. Can be one of:
+    # - branch
+    # - tag
+    target: branch
+    # The enforcement level of the ruleset. `evaluate` allows admins to test
+    # rules before enforcing them.
+    # - disabled
+    # - active
+    # - evaluate
+    enforcement: evaluate
 
-# This is the settings that need to be applied to all repositories in the org
-# See https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-an-organization-repository for all available settings for a repository
-repository:
-  license_template: mit
+    # The actors that can bypass the rules in this ruleset
+    bypass_actors:
+      - actor_id: 1
+        actor_type: OrganizationAdmin
+        bypass_mode: always
+
+    conditions:
+      # Parameters for a repository ruleset ref name condition
+      ref_name:
+        # Array of ref names or patterns to include. One of these
+        # patterns must match for the condition to pass. Also accepts
+        # `~DEFAULT_BRANCH` to include the default branch or `~ALL` to
+        # include all branches.
+        include: ["~DEFAULT_BRANCH"]
+
+        # Array of ref names or patterns to exclude. The condition
+        # will not pass if any of these patterns match.
+        exclude: ["refs/heads/oldmaster"]
