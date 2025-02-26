@@ -3,4 +3,4 @@
 # This is the settings that need to be applied to all repositories in the org
 # See https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#create-an-organization-repository for all available settings for a repository
 repository:
-  has_wiki: false
+  license_template: mit
